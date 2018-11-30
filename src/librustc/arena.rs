@@ -16,6 +16,7 @@ macro_rules! arena_types {
             )>,
             [few] mir_keys: rustc::util::nodemap::DefIdSet,
             [decode] specialization_graph: rustc::traits::specialization_graph::Graph,
+            [decode] borrowck: rustc::middle::borrowck::BorrowCheckResult,
         ], $tcx);
     )
 }
